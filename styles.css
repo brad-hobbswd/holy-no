@@ -1,0 +1,485 @@
+/* ==========================================
+   THE POWER OF A HOLY NO!
+   Bradley Hobbs
+   Global Stylesheet
+========================================== */
+
+/* ==========================================
+   ROOT
+========================================== */
+
+:root{
+
+--bg:#0b0907;
+
+--panel:#1a1511;
+
+--panel-light:#241d18;
+
+--gold:#c99732;
+
+--gold-light:#e3bc63;
+
+--gold-soft:#f0d18c;
+
+--text:#f5ead5;
+
+--muted:#cdb89c;
+
+--shadow:#050403;
+
+--forest:#172012;
+
+--forest-light:#28331f;
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#080706 0%,
+
+#12100d 35%,
+
+#1a1713 100%
+
+);
+
+font-family:Georgia,serif;
+
+color:var(--text);
+
+line-height:1.9;
+
+min-height:100vh;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+transition:.3s;
+
+}
+
+/* ==========================================
+   MANUSCRIPT CONTAINER
+========================================== */
+
+.manuscript{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:60px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(35,28,22,.97),
+
+rgba(24,19,15,.98)
+
+);
+
+border:1px solid rgba(201,151,50,.18);
+
+border-radius:20px;
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.55),
+
+0 0 40px rgba(201,151,50,.08);
+
+}
+
+/* ==========================================
+   BOOK TITLE
+========================================== */
+
+.book{
+
+font-size:clamp(2.5rem,5vw,4rem);
+
+text-align:center;
+
+color:var(--gold-light);
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+text-shadow:
+
+0 2px 8px rgba(0,0,0,.6),
+
+0 0 18px rgba(201,151,50,.25);
+
+margin-bottom:20px;
+
+}
+
+/* ==========================================
+   CHAPTER
+========================================== */
+
+.chapter{
+
+text-align:center;
+
+font-size:2rem;
+
+color:var(--gold);
+
+margin-bottom:12px;
+
+}
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.subtitle{
+
+text-align:center;
+
+font-style:italic;
+
+font-size:1.25rem;
+
+color:var(--muted);
+
+margin-bottom:50px;
+
+}
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+p{
+
+font-size:1.15rem;
+
+color:var(--text);
+
+margin-bottom:28px;
+
+text-align:justify;
+
+}
+
+/* ==========================================
+   CENTER TEXT
+========================================== */
+
+.center{
+
+text-align:center;
+
+}
+
+/* ==========================================
+   PRAYER / QUOTES
+========================================== */
+
+.prayer{
+
+text-align:center;
+
+font-style:italic;
+
+font-size:1.2rem;
+
+color:var(--gold-soft);
+
+}
+
+/* ==========================================
+   FINAL WORD
+========================================== */
+
+.final-word{
+
+margin-top:60px;
+
+text-align:center;
+
+font-size:3rem;
+
+font-weight:bold;
+
+letter-spacing:3px;
+
+color:var(--gold-light);
+
+text-shadow:
+
+0 0 15px rgba(201,151,50,.35);
+
+}
+
+/* ==========================================
+   HORIZONTAL RULE
+========================================== */
+
+hr{
+
+border:none;
+
+height:1px;
+
+background:rgba(201,151,50,.25);
+
+margin:50px 0;
+
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+margin:auto;
+
+border-radius:12px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.book-footer{
+
+margin-top:90px;
+
+padding:60px 20px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(22,18,14,.95),
+
+rgba(12,10,8,.98)
+
+);
+
+border-top:1px solid rgba(201,151,50,.20);
+
+text-align:center;
+
+}
+
+/* ==========================================
+   FOOTER TITLE
+========================================== */
+
+.footer-title{
+
+font-size:1.5rem;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+color:var(--gold-light);
+
+margin-bottom:20px;
+
+}
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin:35px 0;
+
+}
+
+.footer-links a{
+
+color:var(--gold);
+
+font-size:1rem;
+
+font-weight:600;
+
+padding:6px 10px;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--gold-soft);
+
+text-shadow:0 0 10px rgba(227,188,99,.4);
+
+}
+
+/* ==========================================
+   FOOTER AUTHOR
+========================================== */
+
+.footer-author{
+
+color:var(--muted);
+
+font-size:.95rem;
+
+letter-spacing:1px;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+background:var(--gold);
+
+color:#111;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#120f0c;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--gold);
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:var(--gold-light);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.manuscript{
+
+margin:30px 15px;
+
+padding:40px 30px;
+
+}
+
+.book{
+
+font-size:2.2rem;
+
+}
+
+.chapter{
+
+font-size:1.7rem;
+
+}
+
+.subtitle{
+
+font-size:1.1rem;
+
+}
+
+p{
+
+font-size:1.05rem;
+
+}
+
+.footer-links{
+
+gap:15px;
+
+}
+
+.final-word{
+
+font-size:2.3rem;
+
+}
+
+}
