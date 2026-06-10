@@ -240,20 +240,41 @@ margin-top:60px;
 
 text-align:center;
 
-font-size:3rem;
+font-size:clamp(2rem,5vw,2.8rem);
 
-font-weight:bold;
+font-weight:700;
 
-letter-spacing:3px;
+line-height:1.4;
+
+letter-spacing:1px;
 
 color:var(--gold-light);
 
 text-shadow:
 
-0 0 15px rgba(201,151,50,.35);
+0 0 12px rgba(201,151,50,.30);
+
+max-width:850px;
+
+margin-left:auto;
+
+margin-right:auto;
 
 }
 
+@media(max-width:600px){
+
+.final-word{
+
+font-size:1.8rem;
+
+line-height:1.5;
+
+letter-spacing:.5px;
+
+}
+
+}
 /* ==========================================
    HORIZONTAL RULE
 ========================================== */
